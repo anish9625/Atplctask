@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 15</title>
+    <style>
+        body {
+            background: #411ec0;
+            color: rgb(6, 242, 206);
+            font-family: sans-serif;
+            font-size: 40px;
+        }
+
+        b {
+            color: rgb(227, 12, 45);
+        }
+    </style>
+</head>
+
+<body>
+
+    <center>
+        <script>
+
+            var a = [9, 83, 74, 3, 18, -5, 68, 55, 41, 83, 76];
+            function sort(a, b) {
+                return a - b;
+            }
+            document.write('sorted array = ' + '<b>' + a.sort(sort) + '</b>');
+    
+    
+            var a1 = [10, 20, 30, 40];
+            var a2 = [50, 40, 30, 20, 10];
+            document.write('<br>joinde array = ' + '<b>' + [...a1, a2] + '</b>');
+    
+    
+            var p = [10, 20, 30, 40, 50];
+            const q = p.filter(function (el, i) {
+                return i > 0;
+            })
+            document.write('<br>array without 1st element = ' + '<b>' + q + '</b>');
+    
+        </script>
+    </center>
+
+</body>
+
+</html>
